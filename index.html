@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trains</title>
+    <!-- <link rel="stylesheet" href="./assests/css/style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Chitty Chitty Bang Bang</h1>
+                <p class="lead">Chitty Bang Bang, Chitty Chitty Bang Bang We love you and our pretty Chitty Bang Bang,
+                    Chitty Chitty Bang Bang Loves us too</p>
+            </div>
+        </div>
+        <!-- table -->
+        <div class="card">
+            <div class="card-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br>
+        <!-- form -->
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Train Name</label>
+                        <input type="text" class="form-control" id="train" placeholder="Name">
+
+                        <label for="exampleFormControlInput1">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Destination">
+
+                        <label for="exampleFormControlInput1">First Train Time</label>
+                        <input type="time" class="form-control" id="time" placeholder="HH:MM - Military Time">
+
+                        <label for="exampleFormControlInput1">Frequency</label>
+                        <input type="number" class="form-control" id="freq" placeholder="Minutes">
+
+                    </div>
+                    <button id="submit" type="button" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</html>
